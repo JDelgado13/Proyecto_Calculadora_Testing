@@ -29,7 +29,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="cubo_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Component id="euler" min="-2" pref="74" max="-2" attributes="0"/>
                                   <Component id="elevado_btn" min="-2" pref="74" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -41,7 +41,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="ln_btn" pref="0" max="32767" attributes="0"/>
-                                  <Component id="int_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Component id="cuadrado_btn" min="-2" pref="74" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -67,70 +67,64 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="MR_btn" min="-2" pref="74" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="btn8" pref="0" max="32767" attributes="0"/>
-                                      <Component id="btn5" min="-2" pref="74" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btn8" pref="0" max="32767" attributes="0"/>
+                                  <Component id="btn5" min="-2" pref="74" max="-2" attributes="0"/>
                                   <Component id="CE_btn" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                                   <Component id="btn2" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Component id="punto_btn" alignment="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="btn9" min="-2" pref="74" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="jButton27" min="-2" pref="74" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="suma_resta_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="btn9" min="-2" pref="74" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="mult_btn" min="-2" pref="74" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
+                                          <Component id="C_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="dividir_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jButton28" min="-2" pref="74" max="-2" attributes="0"/>
                                               <Component id="btn6" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                                               <Component id="btn3" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="12" max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="dividir_btn" pref="0" max="32767" attributes="0"/>
-                                              <Component id="sum_btn" pref="0" max="32767" attributes="0"/>
-                                              <Component id="mult_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="sum_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                                              <Component id="rest_btn" min="-2" pref="74" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="btn0" min="-2" pref="74" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="rest_btn" min="-2" pref="74" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="btn0" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="MS_btn" min="-2" pref="74" max="-2" attributes="0"/>
-                                          <Component id="C_btn" min="-2" pref="74" max="-2" attributes="0"/>
-                                      </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="MS_btn" min="-2" pref="74" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="msuma_btn" min="-2" pref="75" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="BorrarMemoria_btn" min="-2" pref="74" max="-2" attributes="0"/>
                           <Component id="porciento_btn" min="-2" pref="74" max="-2" attributes="0"/>
-                          <Component id="igual_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                          <Component id="igual_btn" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="visor" min="-2" pref="352" max="-2" attributes="0"/>
+                  <Component id="txtmostrar" min="-2" pref="352" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="89" max="32767" attributes="0"/>
+              <EmptySpace pref="86" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="visor" min="-2" pref="61" max="-2" attributes="0"/>
+              <Component id="txtmostrar" min="-2" pref="61" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -153,37 +147,24 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="CE_btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="C_btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="btn8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="btn9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Component id="jButton27" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                      <Component id="btn5" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jButton28" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="CE_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="C_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="btn8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btn9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="mult_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                              <Component id="btn5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="btn2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btn3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="sum_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rest_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="35" pref="35" max="-2" attributes="0"/>
-                              <Component id="dividir_btn" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -196,17 +177,18 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="porciento_btn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="suma_resta_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dividir_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="mult_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btn6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="igual_btn" alignment="3" min="-2" pref="95" max="-2" attributes="0"/>
+                          <Component id="sum_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="int_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cuadrado_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="sen_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -216,7 +198,7 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cubo_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="euler" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="tan_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
@@ -225,15 +207,11 @@
                           <Component id="sqrt_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="igual_btn" min="-2" pref="95" max="-2" attributes="0"/>
-                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="rest_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btn0" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="punto_btn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="283" max="32767" attributes="0"/>
           </Group>
@@ -241,30 +219,39 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="visor">
+    <Component class="javax.swing.JTextField" name="txtmostrar">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="visorActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtmostrarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="int_btn">
+    <Component class="javax.swing.JButton" name="cuadrado_btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="int"/>
+        <Property name="text" type="java.lang.String" value="x^2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cuadrado_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ln_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="ln"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="cubo_btn">
+    <Component class="javax.swing.JButton" name="euler">
       <Properties>
-        <Property name="text" type="java.lang.String" value="cubo"/>
+        <Property name="text" type="java.lang.String" value="e^x"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eulerActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="elevado_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="x^y"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="elevado_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="log_btn">
       <Properties>
@@ -290,6 +277,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="sqrt"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sqrt_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="mod_btn">
       <Properties>
@@ -300,16 +290,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="8"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn5">
       <Properties>
         <Property name="text" type="java.lang.String" value="5"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn2">
       <Properties>
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="MC_btn">
       <Properties>
@@ -318,23 +317,35 @@
     </Component>
     <Component class="javax.swing.JButton" name="del_btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="del"/>
+        <Property name="text" type="java.lang.String" value="&lt;--"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="del_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn7">
       <Properties>
         <Property name="text" type="java.lang.String" value="7"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn4">
       <Properties>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn1">
       <Properties>
         <Property name="text" type="java.lang.String" value="1"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="MR_btn">
       <Properties>
@@ -346,20 +357,21 @@
         <Property name="text" type="java.lang.String" value="CE"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="suma_resta_btn">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="+/-"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="mult_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="*"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mult_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn6">
       <Properties>
         <Property name="text" type="java.lang.String" value="6"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="MS_btn">
       <Properties>
@@ -370,21 +382,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="C_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn9">
       <Properties>
         <Property name="text" type="java.lang.String" value="9"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton27">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton4"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton28">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton5"/>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="msuma_btn">
       <Properties>
@@ -395,6 +403,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dividir_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BorrarMemoria_btn">
       <Properties>
@@ -410,26 +421,49 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="="/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="igual_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn0">
       <Properties>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn0ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn3">
       <Properties>
         <Property name="text" type="java.lang.String" value="3"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="sum_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="+"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sum_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="rest_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rest_btnActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="punto_btn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="punto_btnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
