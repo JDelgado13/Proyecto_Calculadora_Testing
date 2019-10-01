@@ -40,7 +40,7 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="ln_btn" pref="0" max="32767" attributes="0"/>
+                                  <Component id="log_btn" pref="0" max="32767" attributes="0"/>
                                   <Component id="cuadrado_btn" min="-2" pref="74" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -50,7 +50,7 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="log_btn" min="-2" pref="74" max="-2" attributes="0"/>
+                              <Component id="ln_btn" min="-2" pref="74" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="mod_btn" min="-2" pref="74" max="-2" attributes="0"/>
                           </Group>
@@ -119,6 +119,11 @@
               </Group>
               <EmptySpace pref="86" max="32767" attributes="0"/>
           </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="salir_btn" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -142,7 +147,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="btn1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="log_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ln_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="mod_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -193,7 +198,7 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="ln_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="log_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cos_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -213,7 +218,9 @@
                   <Component id="btn0" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="punto_btn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="283" max="32767" attributes="0"/>
+              <EmptySpace pref="110" max="32767" attributes="0"/>
+              <Component id="salir_btn" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -232,10 +239,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cuadrado_btnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="ln_btn">
+    <Component class="javax.swing.JButton" name="log_btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="ln"/>
+        <Property name="text" type="java.lang.String" value="log"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="log_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="euler">
       <Properties>
@@ -253,20 +263,29 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="elevado_btnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="log_btn">
+    <Component class="javax.swing.JButton" name="ln_btn">
       <Properties>
-        <Property name="text" type="java.lang.String" value="log"/>
+        <Property name="text" type="java.lang.String" value="ln"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ln_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="sen_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="sen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sen_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cos_btn">
       <Properties>
         <Property name="text" type="java.lang.String" value="cos"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cos_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="tan_btn">
       <Properties>
@@ -285,6 +304,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="mod"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mod_btnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btn8">
       <Properties>
@@ -463,6 +485,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="punto_btnActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="salir_btn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Salir"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="salir_btnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

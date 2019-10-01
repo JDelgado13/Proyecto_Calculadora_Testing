@@ -33,10 +33,10 @@ public class Calculadora extends javax.swing.JFrame {
 
         txtmostrar = new javax.swing.JTextField();
         cuadrado_btn = new javax.swing.JButton();
-        ln_btn = new javax.swing.JButton();
+        log_btn = new javax.swing.JButton();
         euler = new javax.swing.JButton();
         elevado_btn = new javax.swing.JButton();
-        log_btn = new javax.swing.JButton();
+        ln_btn = new javax.swing.JButton();
         sen_btn = new javax.swing.JButton();
         cos_btn = new javax.swing.JButton();
         tan_btn = new javax.swing.JButton();
@@ -67,6 +67,7 @@ public class Calculadora extends javax.swing.JFrame {
         sum_btn = new javax.swing.JButton();
         rest_btn = new javax.swing.JButton();
         punto_btn = new javax.swing.JButton();
+        salir_btn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,7 +84,12 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        ln_btn.setText("ln");
+        log_btn.setText("log");
+        log_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                log_btnActionPerformed(evt);
+            }
+        });
 
         euler.setText("e^x");
         euler.addActionListener(new java.awt.event.ActionListener() {
@@ -99,11 +105,26 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
-        log_btn.setText("log");
+        ln_btn.setText("ln");
+        ln_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ln_btnActionPerformed(evt);
+            }
+        });
 
         sen_btn.setText("sen");
+        sen_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sen_btnActionPerformed(evt);
+            }
+        });
 
         cos_btn.setText("cos");
+        cos_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cos_btnActionPerformed(evt);
+            }
+        });
 
         tan_btn.setText("tan");
 
@@ -115,6 +136,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
 
         mod_btn.setText("mod");
+        mod_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mod_btnActionPerformed(evt);
+            }
+        });
 
         btn8.setText("8");
         btn8.addActionListener(new java.awt.event.ActionListener() {
@@ -256,6 +282,13 @@ public class Calculadora extends javax.swing.JFrame {
             }
         });
 
+        salir_btn.setText("Salir");
+        salir_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salir_btnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -274,14 +307,14 @@ public class Calculadora extends javax.swing.JFrame {
                                     .addComponent(sqrt_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(ln_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                                    .addComponent(log_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
                                     .addComponent(cuadrado_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(sen_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(cos_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(log_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ln_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mod_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(24, 24, 24)
@@ -332,6 +365,10 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(igual_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(txtmostrar, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(86, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(salir_btn)
+                .addGap(49, 49, 49))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -353,7 +390,7 @@ public class Calculadora extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(btn1)
-                                    .addComponent(log_btn)
+                                    .addComponent(ln_btn)
                                     .addComponent(mod_btn)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -391,7 +428,7 @@ public class Calculadora extends javax.swing.JFrame {
                             .addComponent(sen_btn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ln_btn)
+                            .addComponent(log_btn)
                             .addComponent(cos_btn))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -405,7 +442,9 @@ public class Calculadora extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn0)
                     .addComponent(punto_btn))
-                .addContainerGap(283, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addComponent(salir_btn)
+                .addGap(144, 144, 144))
         );
 
         pack();
@@ -563,6 +602,64 @@ if(contenido.length()<=0){
         }
     }//GEN-LAST:event_eulerActionPerformed
 
+    private void cos_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cos_btnActionPerformed
+       contenido=txtmostrar.getText();
+       if(contenido.length()>0){
+          resultado=Math.cos(Double.parseDouble(contenido));
+          String res;
+          res=String.valueOf(resultado);
+          txtmostrar.setText(res);
+       }
+       
+    }//GEN-LAST:event_cos_btnActionPerformed
+
+    private void sen_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sen_btnActionPerformed
+       contenido=txtmostrar.getText();
+       if(contenido.length()>0){
+          resultado=Math.sin(Double.parseDouble(contenido));
+          String res;
+          res=String.valueOf(resultado);
+          txtmostrar.setText(res);
+       }
+    }//GEN-LAST:event_sen_btnActionPerformed
+
+    private void log_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_log_btnActionPerformed
+        contenido=txtmostrar.getText();
+        if(contenido.length()>0){
+           resultado=Math.log10(Double.parseDouble(contenido));
+           String res;
+           res=String.valueOf(resultado);
+           txtmostrar.setText(res);
+        }
+    }//GEN-LAST:event_log_btnActionPerformed
+
+    private void ln_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ln_btnActionPerformed
+        contenido=txtmostrar.getText();
+        if(contenido.length()>0){
+           resultado=Math.log(Double.parseDouble(contenido));
+           String res;
+           res=String.valueOf(resultado);
+           txtmostrar.setText(res);
+        }
+    }//GEN-LAST:event_ln_btnActionPerformed
+
+    private void salir_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir_btnActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_salir_btnActionPerformed
+
+    private void mod_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mod_btnActionPerformed
+        contenido=txtmostrar.getText();
+        resultado=Double.parseDouble(contenido);
+       if(resultado < 0){
+          
+          String res;
+          double r;
+         r=resultado*-1; 
+         res=String.valueOf(r);
+          txtmostrar.setText(res);
+       }
+    }//GEN-LAST:event_mod_btnActionPerformed
+
     public static String operaciones (String valor1, String valor2, String signo){
       Double resultadocalc=0.0;
       String respuesta;
@@ -648,6 +745,7 @@ if(contenido.length()<=0){
     private javax.swing.JButton porciento_btn;
     private javax.swing.JButton punto_btn;
     private javax.swing.JButton rest_btn;
+    private javax.swing.JButton salir_btn;
     private javax.swing.JButton sen_btn;
     private javax.swing.JButton sqrt_btn;
     private javax.swing.JButton sum_btn;
